@@ -1,4 +1,4 @@
-// @ts-ignore
+
 let searchbar = document.getElementById('input');
 searchbar.focus();
 console.log("working")
@@ -60,13 +60,6 @@ async function search() {
     // @ts-ignore
     document.getElementById("answers").innerHTML = await displayQuestion(questions);
 }
-
-
-
-
-
-
-
 
 function displayAnswers(params) {
     var html = "";

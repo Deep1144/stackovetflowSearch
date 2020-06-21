@@ -17,7 +17,8 @@
 		"commands": [
 			{
 				"command": "extension.stack",
-				"key": "ctrl+o s"
+				"key": "ctrl+alt+d",
+				"title": "open stackview"
 			},
 			{
 				"command": "extension.stack",
