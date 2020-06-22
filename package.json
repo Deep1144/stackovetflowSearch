@@ -12,12 +12,19 @@
 	"activationEvents": [
 		"onCommand:extension.stack"
 	],
+	"keywords": [
+		"vscode",
+		"vscode extenstion",
+		"stackoverflow",
+		"stack overflow search",
+		"extension"
+	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "extension.stack",
-				"key": "ctrl+alt+d",
+				"key": "ctrl+shift+3",
 				"title": "open stackview"
 			},
 			{

@@ -1,20 +1,17 @@
 # stacksearch README
 
-This is the README for your extension "stacksearch". After writing up a brief description, we recommend including the following sections.
-
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+use **`ctrl+shift+3`** to start the extension or type **`open stackview`** in command palette. 
 
-For example if there is an image subfolder under your extension project workspace:
+> See the demo image's below.
 
-\!\[feature X\]\(images/feature-x.png\)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![demo](demo/demo1.png)
 
-## Requirements
+![demo](demo/demo2.png)
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+
 
 ## Extension Settings
 
@@ -27,25 +24,18 @@ This extension contributes the following settings:
 * `myExtension.enable`: enable/disable this extension
 * `myExtension.thing`: set to `blah` to do something
 
-## Known Issues
+## Development
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- `https://github.com/Deep1144/stackovetflowSearch` clone the repo.
+- use `npm install` to install all dev dependencies.
+- use `ctrl + f5` to run it in development env.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
+Initial release of stacksearch use `ctrl+shift+3` or in command palette type `open stackview` to see this working.
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -59,7 +49,6 @@ Added features X, Y, and Z.
 
 ### For more information
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Bug : <a href="https://github.com/Deep1144/stackovetflowSearch/issues">Report here</a>.
 
 **Enjoy!**

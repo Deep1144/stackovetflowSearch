@@ -1,7 +1,6 @@
 
 let searchbar = document.getElementById('input');
 searchbar.focus();
-console.log("working")
 var temp = "";
 
 function displayQuestion(questions) {
@@ -25,7 +24,7 @@ function displayQuestion(questions) {
     <h5 class="card-title"><span class="badge badge-pill badge-info">${question.score}</span>
           score
         </h5>
-        <button href="#" onClick="selectedQuestionRender(${question.question_id})" id="show-answers-${question.question_id}"  class="btn btn-secondary">Go somewhere</button>
+        <button href="#" onClick="selectedQuestionRender(${question.question_id})" id="show-answers-${question.question_id}"  class="btn btn-secondary">view answer</button>
       </div>
     </div>`;
 
@@ -63,8 +62,9 @@ async function search() {
 
 function displayAnswers(params) {
     var html = "";
+    alert(params.length);
 
-    if (!params.length) {
+    if (params.length == 0) {
         html = `<div class="alert alert-danger" role="alert">
             This is a danger alert—check it out!
         </div>`;
@@ -86,22 +86,17 @@ function copy( e){
 
 async function selectedQuestionRender(e) {
     // console.log(e);
-    // @ts-ignore
     fetch(`https://api.stackexchange.com/2.2/questions/${e}/answers?order=desc&sort=votes&site=stackoverflow&filter=withbody`).then(
         res => res.json()).then(data => {
             console.log(data.items)
-            // @ts-ignore
             temp = document.getElementById("answers").innerHTML;
-            // @ts-ignore
             document.getElementById("answers").innerHTML = "";
-            // @ts-ignore
             document.getElementById("answers").innerHTML = displayAnswers(data.items);
         }).then(renderCopyButtons);
 }
 
 
 function back() {
-    // @ts-ignore
     document.getElementById("answers").innerHTML = temp;
 }
 
@@ -109,7 +104,6 @@ function back() {
 // For copy buttons //
 
 function renderCopyButtons(){
-    // @ts-ignore
     document.querySelectorAll('pre > code').forEach(code => {
         code.innerHTML += '<button class="content-tocopy btn" onclick="copyToClipboard(this.parentElement.innerHTML.slice(0, this.parentElement.innerHTML.indexOf(\'content-tocopy\') - 15))">Copy</button>'
     })
@@ -118,31 +112,24 @@ function renderCopyButtons(){
 
 const copyToClipboard = str => {
     console.log(str);
-    // @ts-ignore
     const el = document.createElement('textarea');
     el.value = str;
     el.setAttribute('readonly', '');
     el.style.position = 'absolute';
     el.style.left = '-9999px';
-    // @ts-ignore
     document.body.appendChild(el);
     el.select();
-    // @ts-ignore
     document.execCommand('copy');
-    // @ts-ignore
     document.body.removeChild(el);
 };
 
 
-// @ts-ignore
 window.addEventListener('keyup', (e) => {
     if (e.keyCode === 13) {
-        // @ts-ignore
         search(e);
     }
 }, false);
 
 
-// @ts-ignore
 document.querySelector("button").addEventListener("click", search);
 
