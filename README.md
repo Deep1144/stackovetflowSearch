@@ -1,5 +1,7 @@
 # stacksearch README
 
+[![Install extension button](https://res.cloudinary.com/saurabhdaware/image/upload/v1564401766/saurabhdaware.in/otherAssets/iebutton.png)](https://marketplace.visualstudio.com/items?itemName=Deep.stacksearch)
+
 ## Features
 
 use **`ctrl+shift+3`** to start the extension or type **`open stackview`** in command palette. 
