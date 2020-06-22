@@ -1,6 +1,6 @@
 # stacksearch README
 
-[![Install extension button](https://res.cloudinary.com/saurabhdaware/image/upload/v1564401766/saurabhdaware.in/otherAssets/iebutton.png)](https://marketplace.visualstudio.com/items?itemName=Deep.stacksearch)
+[![vscode button](demo/vscode.png)](https://marketplace.visualstudio.com/items?itemName=Deep.stacksearch)
 
 ## Features
 
