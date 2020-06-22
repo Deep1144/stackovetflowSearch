@@ -3,12 +3,18 @@
 	"displayName": "stacksearch",
 	"description": "opens a side window to search easily in stackoverflow",
 	"version": "0.0.1",
+	"publisher": "Deep",
 	"engines": {
 		"vscode": "^1.46.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Deep1144/stackovetflowSearch"
 	},
 	"categories": [
 		"Other"
 	],
+	"icon": "logo.png",
 	"activationEvents": [
 		"onCommand:extension.stack"
 	],
