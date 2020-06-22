@@ -1,6 +1,9 @@
 # stacksearch README
 
-[![vscode button](demo/vscode.png)](https://marketplace.visualstudio.com/items?itemName=Deep.stacksearch)
+<a href="https://marketplace.visualstudio.com/items?itemName=Deep.stacksearch">
+<img src="demo/vscode.png" alt="vscode logo" width=70px height = 70px>
+</a>
+
 
 ## Features
 
